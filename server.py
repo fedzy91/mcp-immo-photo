@@ -14,7 +14,7 @@ try:
     MCP_AVAILABLE = True
 except ImportError:
     MCP_AVAILABLE = False
-    print("⚠️  MCP SDK non installé — mode test CLI", file=sys.stderr)
+    print("MCP SDK non installe -- mode test CLI", file=sys.stderr)
 
 # ── FastAPI pour le transport SSE ─────────────────────────────────────────────
 from fastapi import FastAPI, Request
@@ -183,5 +183,5 @@ if MCP_AVAILABLE:
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    print(f"\ud83d\ude80 Serveur MCP Immo Photo d\u00e9marr\u00e9 sur port {port}")
+    print(f"Serveur MCP Immo Photo demarre sur port {port}")
     uvicorn.run(app, host="0.0.0.0", port=port)
