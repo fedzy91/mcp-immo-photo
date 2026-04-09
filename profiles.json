@@ -1,0 +1,77 @@
+{
+  "VERSION": "1.0",
+  "LEARNED_FROM": "10 paires avant/apres Guy Hoquet Mennecy",
+  
+  "global": {
+    "saturation_ratio": 0.72,
+    "temperature_shift": -10,
+    "lift_blacks": 14,
+    "sharpen": 1.6,
+    "denoise": 0.25,
+    "vignette_strength": 0.18,
+    "crop_left_pct": 0.02,
+    "crop_right_pct": 0.01,
+    "perspective_correct": 0.025
+  },
+
+  "salon_salle_manger": {
+    "brightness": 1.08, "contrast": 1.12, "saturation": 0.75,
+    "shadows": 18, "highlights": -0.12, "hdr": true,
+    "temperature": -8, "clarity": 0.3,
+    "inpainting_targets": ["tableaux personnels", "miroirs décoratifs", "horloges", "bibelots dessus buffet", "lampadaires"]
+  },
+  "cuisine": {
+    "brightness": 1.10, "contrast": 1.15, "saturation": 0.78,
+    "shadows": 20, "highlights": -0.15, "hdr": true,
+    "temperature": -8, "clarity": 0.35,
+    "inpainting_targets": ["appareils electromenager plan travail", "micro-ondes", "cafetiere", "bouilloire", "objets comptoir", "vaisselle visible placards"]
+  },
+  "chambre_parentale": {
+    "brightness": 1.06, "contrast": 1.10, "saturation": 0.82,
+    "shadows": 15, "highlights": -0.10, "hdr": false,
+    "temperature": -11, "clarity": 0.25,
+    "inpainting_targets": ["vetements visibles", "petits meubles en trop", "objets personnels", "valisettes"]
+  },
+  "salon_sejour": {
+    "brightness": 1.05, "contrast": 1.10, "saturation": 0.85,
+    "shadows": 12, "highlights": -0.12, "hdr": true,
+    "temperature": -16, "clarity": 0.28,
+    "inpainting_targets": ["horloges murales", "lampadaires", "tableaux personnels", "bibliotheque encombrée"]
+  },
+  "facade_exterieure": {
+    "brightness": 1.16, "contrast": 1.08, "saturation": 0.78,
+    "shadows": 22, "highlights": -0.18, "hdr": false,
+    "temperature": -5, "clarity": 0.40,
+    "inpainting_targets": ["vehicules", "poubelles", "fils electriques", "mauvaises herbes"]
+  },
+  "jardin": {
+    "brightness": 1.20, "contrast": 1.06, "saturation": 1.05,
+    "shadows": 25, "highlights": -0.20, "hdr": false,
+    "temperature": -2, "clarity": 0.35,
+    "inpainting_targets": ["buts de foot", "trampolines", "mobilier jardin encombrant", "feuilles mortes"]
+  },
+  "chambre_ado": {
+    "brightness": 1.32, "contrast": 1.12, "saturation": 0.70,
+    "shadows": 28, "highlights": -0.15, "hdr": true,
+    "temperature": -20, "clarity": 0.30,
+    "inpainting_targets": ["vetements", "chaussures", "bagages valises", "affaires bureau", "posters personnels"]
+  },
+  "chambre_enfant": {
+    "brightness": 1.18, "contrast": 1.10, "saturation": 0.72,
+    "shadows": 20, "highlights": -0.12, "hdr": true,
+    "temperature": -8, "clarity": 0.28,
+    "inpainting_targets": ["jouets eparpilles", "peluches geantes", "stands micros", "petites tables basses", "encombrement sol"]
+  },
+  "chambre_bebe": {
+    "brightness": 1.15, "contrast": 1.08, "saturation": 0.65,
+    "shadows": 18, "highlights": -0.10, "hdr": true,
+    "temperature": -15, "clarity": 0.25,
+    "inpainting_targets": ["cuisine jouet", "chaises enfant colorees", "jouets sol", "tas jouets"]
+  },
+  "default": {
+    "brightness": 1.12, "contrast": 1.12, "saturation": 0.78,
+    "shadows": 18, "highlights": -0.12, "hdr": true,
+    "temperature": -10, "clarity": 0.30,
+    "inpainting_targets": ["objets personnels", "encombrement"]
+  }
+}
